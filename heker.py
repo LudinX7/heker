@@ -186,7 +186,7 @@ class nampung:
 		except:
 			print('[×] User tidak ditemukan [×]')
 			time.sleep(2)
-			self.manu()
+			self.menu()
 		r3=json.loads(req.get(f'https://graph.facebook.com/{t}/friends?access_token={self.token}').text)
 		with Bool(max_workers=35) as tokai:
 			for i in r3['data']:idPublik.append(i['id'])
